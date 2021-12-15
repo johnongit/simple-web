@@ -1,0 +1,7 @@
+FROM python:3.11.0a3-slim-bullseye
+
+EXPOSE 80
+WORKDIR /code
+ADD . /code
+RUN touch index.html
+CMD python index.py
